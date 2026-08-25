@@ -11,8 +11,7 @@ A simple C++ console program that encodes and decodes text using the Caesar Ciph
 # How it works
 
 - The program shifts each letter by the specified number of positions in the alphabet.
-->For example, with a shift of 3:
-->Hello → Khoor
+- For example, with a shift of 3: Hello → Khoor
 - The same shift can be used to decode the text back to its original form.
 
 # Technologies
