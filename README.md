@@ -22,8 +22,8 @@ The same shift can be used to decode the text back to its original form.
 C++
 Standard Library (iostream, string)
 # Usage
--Run the program.
--Enter a passphrase.
--Choose 1 for Encode or 2 for Decode.
--Enter the shift value.
--View the result.
+- Run the program.
+- Enter a passphrase.
+- Choose 1 for Encode or 2 for Decode.
+- Enter the shift value.
+- View the result.
