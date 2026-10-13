@@ -1,0 +1,27 @@
+name: C++ Tests
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    name: Run Calculator Tests
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Configure CMake
+        run: cmake -S . -B build
+
+      - name: Build test program
+        run: cmake --build build --target calculator_tests
+
+      - name: Run automated tests
+        run: ctest --test-dir build --output-on-failure
